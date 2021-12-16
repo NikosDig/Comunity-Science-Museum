@@ -1,3 +1,42 @@
+:root {
+  --dark-green: #3fa652;
+  --black: #222327;
+}
+
 body {
-  background-color: red;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+nav {
+  width: 100%;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo img {
+  max-width: 130px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav a {
+  text-decoration: none;
+  color: var(--black);
+}
+nav ul li {
+  padding: 0 20px;
+}
+.active {
+  color: var(--dark-green);
+  border-bottom: 2px solid var(--dark-green);
+  font-weight: 600;
 }
