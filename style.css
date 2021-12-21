@@ -1,42 +1,162 @@
 :root {
   --dark-green: #3fa652;
   --black: #222327;
+  --body-color: #f7f7e7;
+  --home-exibitions: #308fac;
 }
+/* <-- global styling --> */
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   line-height: 1;
-  font-size: 1.5rem;
-  text-transform: uppercase;
+  font-size: 1.25rem;
   font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background: var(--body-color);
+}
+h1,
+h2,
+h3,
+a {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  text-decoration: none;
 }
 
-nav {
-  width: 100%;
+/*      Nav styling           */
+
+.logo img {
+  max-width: 130px;
+  margin-left: 50px;
 }
-nav {
+
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  background: #fff;
 }
-.logo img {
-  max-width: 130px;
-}
-nav ul {
-  list-style: none;
-  display: flex;
-}
-nav a {
-  text-decoration: none;
+
+header label {
+  cursor: pointer;
+  margin-right: 20px;
+  font-size: 33px;
   color: var(--black);
 }
-nav ul li {
-  padding: 0 20px;
+
+nav {
+  display: none;
+  position: fixed;
+  top: 110px;
+  right: 10px;
+  z-index: 100;
+  background: #fff;
+  border: 1px solid var(--black);
 }
+
+nav ul {
+  list-style: none;
+  margin-right: 20px;
+  padding: 10px;
+}
+
+nav li {
+  padding: 10px 20px;
+  display: block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--black);
+  /* font-size: 0.8rem; */
+}
+
 .active {
   color: var(--dark-green);
   border-bottom: 2px solid var(--dark-green);
   font-weight: 600;
+}
+
+#hamburger {
+  display: none;
+}
+
+#hamburger:checked ~ nav {
+  display: block;
+}
+
+/*      Home page styling     */
+
+.home-banner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 400px;
+  background: url(images/home/homebanerresized.jpg) no-repeat center;
+  background-size: cover;
+  margin: 20px auto;
+}
+.home-heading {
+  text-transform: uppercase;
+  text-align: left;
+  padding-left: 10px;
+}
+.right-home-heading {
+  max-width: 67%;
+  height: 100px;
+  text-align: center;
+  background-color: var(--home-exibitions);
+  border-radius: 25px 0 0 25px;
+  margin: 25px 0 25px 33%;
+}
+.right-home-heading a {
+  color: white;
+  line-height: 100px;
+  letter-spacing: 2px;
+}
+.home_exibition-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  gap: 20px;
+}
+.home_evolution {
+  width: 30%;
+  height: 300px;
+  background: url(images/home/mammoth-1257288_1920-min.jpg);
+}
+
+/*      media styling     */
+
+@media (min-width: 824px) {
+  nav {
+    display: block;
+    position: static;
+    border: none;
+  }
+  nav a {
+    font-size: 0.8rem;
+  }
+  nav li {
+    display: inline-block;
+  }
+  header label {
+    display: none;
+  }
+}
+
+@media (min-width: 942px) {
+  nav a {
+    font-size: 1.25rem;
+  }
+  nav ul li a:hover {
+    font-size: 1.5rem;
+    transition: 500ms;
+  }
 }
