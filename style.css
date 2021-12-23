@@ -18,7 +18,7 @@ body {
   font-size: 1.25rem;
   font-family: "Montserrat", sans-serif;
   min-height: 100vh;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   display: grid;
   grid-template-rows: auto 1fr auto;
   background: var(--body-color);
