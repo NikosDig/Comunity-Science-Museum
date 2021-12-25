@@ -123,3 +123,12 @@ footer div a {
   padding: 10px;
   color: var(--black);
 }
+
+/*      breadcrumbs section      */
+
+.breadcrumbs {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 5px;
+}
