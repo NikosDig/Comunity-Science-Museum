@@ -1,0 +1,125 @@
+:root {
+  --dark-green: #3fa652;
+  --black: #222327;
+  --body-color: #f7f7e7;
+  --home-exibitions: #308fac;
+  --home-explore: #f4e604;
+  --simple-white: #fff;
+  --visit-home: #0457ac;
+  --home-get-involved: #a7e237;
+  --card-background-color: #757575;
+}
+/* <-- global styling --> */
+
+body {
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1;
+  font-size: 1.25rem;
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background: var(--body-color);
+}
+h1,
+h2,
+h3,
+a {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+.white {
+  color: var(--simple-white);
+}
+.cta {
+  display: inline-block;
+  margin: 30px;
+  padding: 10px 40px;
+  background-color: var(--dark-green);
+  border: 1px solid var(--simple-white);
+  border-radius: 10px;
+}
+
+/*      Nav styling           */
+
+.logo img {
+  max-width: 130px;
+  margin-left: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: var(--simple-white);
+}
+
+header label {
+  cursor: pointer;
+  margin-right: 20px;
+  font-size: 33px;
+  color: var(--black);
+}
+
+nav {
+  display: none;
+  position: fixed;
+  top: 110px;
+  right: 10px;
+  z-index: 100;
+  background: var(--simple-white);
+  border: 1px solid var(--black);
+}
+
+nav ul {
+  list-style: none;
+  margin-right: 20px;
+  padding: 10px;
+}
+
+nav li {
+  padding: 10px 20px;
+  display: block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.active {
+  color: var(--dark-green);
+  border-bottom: 2px solid var(--dark-green);
+  font-weight: 600;
+}
+
+#hamburger {
+  display: none;
+}
+
+#hamburger:checked ~ nav {
+  display: block;
+}
+
+/*      footer styling       */
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 100%;
+  background: var(--simple-white);
+}
+footer div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+footer div a {
+  padding: 10px;
+  color: var(--black);
+}
