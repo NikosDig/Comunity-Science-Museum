@@ -132,3 +132,6 @@ footer div a {
   align-items: center;
   margin-left: 5px;
 }
+.breadcrumbs a:visited {
+  color: var(--black);
+}

@@ -12,6 +12,8 @@
 
 .visit-heading_banner {
   font-size: 40px;
+  margin: 10px;
+  text-align: center;
 }
 
 .main-heading {
@@ -21,4 +23,84 @@
 }
 .map {
   margin: 60px auto 40px auto;
+}
+
+.visit_header {
+  background-color: var(--simple-white);
+  text-align: center;
+  font-size: 40px;
+  padding: 40px 0 40px 0;
+}
+
+.location,
+.admission {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 20px;
+}
+.location h3,
+.admission h3,
+.food h3 {
+  text-decoration: underline;
+  letter-spacing: 2px;
+}
+
+.visit_location {
+  background: url(../images/visit/visit_location.jpg) center;
+  background-size: cover;
+}
+.visit_opening-hours {
+  background: url(../images/visit/visit_opening-hours.jpg) center;
+  background-size: cover;
+}
+.visit_phone {
+  background: url(../images/visit/visit_phone.jpg) center;
+  background-size: cover;
+}
+.location figure,
+.admission figure {
+  width: 30%;
+  height: 350px;
+  margin: 0;
+  display: none;
+}
+.visit_locationgrid_item1,
+.visit_locationgrid_item2,
+.visit_locationgrid_item3,
+.visit_admissiongrid_item1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.visit_admission {
+  background: url(../images/visit/visit_admission.jpg) left;
+  background-size: cover;
+}
+.visit_accessibility {
+  background: url(../images/visit/visit_accessability.jpg) center;
+  background-size: cover;
+}
+.flex1 {
+  flex: 1;
+}
+
+.food {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 20px;
+}
+.food figure {
+  width: 80%;
+}
+.food img {
+  width: 100%;
 }
