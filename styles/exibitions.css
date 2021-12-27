@@ -1,0 +1,47 @@
+.exibitions-banner-container {
+  background: url(../images/exibition/exibition_banner.jpg) center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  margin: 20px auto;
+}
+.exibitions-heading_banner {
+  font-size: 40px;
+  margin: 10px;
+  text-align: center;
+}
+.main-heading {
+  text-decoration: underline;
+  font-size: 48px;
+}
+
+.exibitions_container {
+  display: grid;
+  grid-template-columns: 90%;
+  margin: 40px 10px;
+  gap: 35px;
+  justify-content: space-around;
+}
+.exibitions_container figure {
+  margin: 0;
+  padding: 0;
+}
+.exibitions_container img {
+  width: 100%;
+  height: 400px;
+}
+.exibitions_container > div {
+  border: 1px solid var(--black);
+  background-color: var(--card-background-color);
+  text-align: center;
+}
+.card-div-link {
+  margin: 30px 0 30px 0;
+}
+.card-div-link a {
+  padding: 30px;
+}

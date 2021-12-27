@@ -131,6 +131,7 @@ footer div a {
   justify-content: flex-start;
   align-items: center;
   margin-left: 5px;
+  color: var(--black);
 }
 .breadcrumbs a:visited {
   color: var(--black);

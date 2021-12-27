@@ -16,6 +16,11 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media (min-width: 700px) {
+  .exibitions_container {
+    grid-template-columns: 45% 45%;
+  }
+}
 @media (min-width: 800px) {
   .home_explore_container {
     grid-template-columns: repeat(4, 1fr);
