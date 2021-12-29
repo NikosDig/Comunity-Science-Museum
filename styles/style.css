@@ -8,6 +8,7 @@
   --visit-home: #0457ac;
   --home-get-involved: #a7e237;
   --card-background-color: #757575;
+  --evolution-color: #308fac;
 }
 /* <-- global styling --> */
 
@@ -135,4 +136,8 @@ footer div a {
 }
 .breadcrumbs a:visited {
   color: var(--black);
+}
+.breadcrumbs a,
+.breadcrumbs p {
+  font-size: 16px;
 }

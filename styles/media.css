@@ -1,7 +1,6 @@
 @media (min-width: 500px) {
-  .location figure,
-  .admission figure {
-    display: inline-block;
+  .main-heading {
+    font-size: 48px;
   }
 }
 
@@ -15,10 +14,14 @@
   .home_visit_container {
     grid-template-columns: repeat(2, 1fr);
   }
+  .location figure,
+  .admission figure {
+    display: inline-block;
+  }
 }
 @media (min-width: 700px) {
   .exibitions_container {
-    grid-template-columns: 45% 45%;
+    grid-template-columns: 40% 40%;
   }
 }
 @media (min-width: 800px) {
@@ -43,6 +46,12 @@
   .home_visit_item4 {
     grid-column: 1/4;
     grid-row: 2/3;
+  }
+  .span2 {
+    grid-column: span 2;
+  }
+  .main-subject {
+    grid-template-columns: 1fr 1fr;
   }
 }
 

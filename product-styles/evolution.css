@@ -1,0 +1,68 @@
+/*          page background color            */
+main {
+  background-color: var(--evolution-color);
+}
+/*           main heading and banner             */
+.evolution-banner-container {
+  background: url(../images/exibition/evolution/evolution_banner.jpeg) center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  margin: 20px auto;
+}
+.evolution-heading_banner {
+  font-size: 40px;
+  margin: 10px;
+  text-align: center;
+}
+.main-heading {
+  text-decoration: underline;
+}
+/*          sub banner and main text section             */
+.sub-banner {
+  background: url(../images/exibition/evolution/evolution_small-banner.jpeg)
+    right bottom / cover;
+}
+.evolution_item1 {
+  background: url(../images/exibition/evolution/evolution_1.jpeg) center / cover;
+}
+.evolution_item2 {
+  background: url(../images/exibition/evolution/evolution_4.jpg) 50% 90% / cover;
+}
+.evolution_item3 {
+  background: url(../images/exibition/evolution/evolution_3.jpg) center / cover;
+}
+.main-subject {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 10px;
+  gap: 10px;
+}
+.big {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 10px;
+}
+.small {
+  width: 100%;
+  height: 200px;
+}
+.evolution_small-container {
+  display: flex;
+  gap: 5px;
+}
+.span2 {
+  grid-column: span 1;
+}
+.text-custom {
+  font-size: 29px;
+  letter-spacing: 1px;
+  line-height: 40px;
+}
+.text-custom p {
+  margin: 0 5px 20px 5px;
+}
