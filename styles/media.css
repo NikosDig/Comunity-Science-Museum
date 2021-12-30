@@ -53,6 +53,9 @@
   .main-subject {
     grid-template-columns: 1fr 1fr;
   }
+  .carousel {
+    display: flex;
+  }
 }
 
 @media (min-width: 824px) {

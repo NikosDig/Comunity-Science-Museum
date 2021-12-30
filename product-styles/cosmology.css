@@ -1,0 +1,84 @@
+/*          page background color            */
+main {
+  background-color: var(--black);
+  color: var(--simple-white);
+}
+/*           bredcrumbs cosmology            */
+.breadcrumbs-cosmology {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 5px;
+  color: var(--simple-white);
+}
+.breadcrumbs-cosmology a:visited {
+  color: var(--simple-white);
+}
+.breadcrumbs-cosmology a,
+.breadcrumbs-cosmology p {
+  font-size: 16px;
+}
+/*           main heading and banner             */
+.cosmology-banner-container {
+  background: url(../images/exibition/cosmology/cosmology_hero-banner.jpg)
+    center / cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  margin: 20px auto;
+}
+.cosmology-heading_banner {
+  font-size: 40px;
+  margin: 10px;
+  text-align: center;
+}
+.main-heading {
+  text-decoration: underline;
+}
+/*          sub banner and main text section             */
+.cosmology_sub-banner {
+  background: url(../images/exibition/cosmology/cosmology_small-banner.jpg)
+    right bottom / cover;
+}
+.cosmology_item1 {
+  background: url(../images/exibition/cosmology/cosmology_1.jpg) center / cover;
+}
+.cosmology_item2 {
+  background: url(../images/exibition/cosmology/cosmology_2.jpg) 50% 90% / cover;
+}
+.cosmology_item3 {
+  background: url(../images/exibition/cosmology/planetarium3.jpg) center / cover;
+}
+/* carousel section */
+
+#co-r1:checked ~ .radio1 {
+  flex: 5;
+}
+#co-r1:checked ~ .radio1 .carousel-pic1 {
+  filter: opacity(1);
+  object-fit: fill;
+}
+#co-r2:checked ~ .radio2 {
+  flex: 5;
+}
+#co-r2:checked ~ .radio2 .carousel-pic2 {
+  filter: opacity(1);
+  object-fit: fill;
+}
+#co-r3:checked ~ .radio3 {
+  flex: 5;
+}
+#co-r3:checked ~ .radio3 .carousel-pic3 {
+  filter: opacity(1);
+  object-fit: fill;
+}
+#co-r4:checked ~ .radio4 {
+  flex: 5;
+}
+#co-r4:checked ~ .radio4 .carousel-pic4 {
+  filter: opacity(1);
+  object-fit: fill;
+}
