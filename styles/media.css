@@ -2,6 +2,9 @@
   .main-heading {
     font-size: 48px;
   }
+  .card-div-link a {
+    padding: 30px;
+  }
 }
 
 @media (min-width: 600px) {

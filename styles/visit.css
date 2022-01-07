@@ -50,7 +50,7 @@
 }
 
 .visit_location {
-  background: url(../images/visit/visit_location.jpg) center;
+  background: url(../images/visit/visit_location.jpg) center right;
   background-size: cover;
 }
 .visit_opening-hours {
