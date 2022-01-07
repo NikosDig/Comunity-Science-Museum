@@ -23,6 +23,9 @@
   .exibitions_container {
     grid-template-columns: 40% 40%;
   }
+  .explore_container {
+    grid-template-columns: 40% 40%;
+  }
 }
 @media (min-width: 800px) {
   .home_explore_container {

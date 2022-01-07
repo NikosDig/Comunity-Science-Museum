@@ -9,6 +9,8 @@
   --home-get-involved: #a7e237;
   --card-background-color: #757575;
   --evolution-color: #308fac;
+  --biology-color: #f1f1f1;
+  --robotics-color: #d95636;
 }
 /* <-- global styling --> */
 
@@ -34,6 +36,9 @@ a {
 }
 .white {
   color: var(--simple-white);
+}
+.black {
+  color: var(--black);
 }
 .cta {
   display: inline-block;

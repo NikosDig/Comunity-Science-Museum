@@ -1,5 +1,5 @@
-.exibitions-banner-container {
-  background: url(../images/exibition/exibition_banner.jpg) center;
+.explore-banner-container {
+  background: url(../images/explore/hero-banner_explore.jpg) 70px 29cm;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -9,7 +9,7 @@
   height: 400px;
   margin: 20px auto;
 }
-.exibitions-heading_banner {
+.explore-heading_banner {
   font-size: 40px;
   margin: 10px;
   text-align: center;
@@ -18,23 +18,23 @@
   text-decoration: underline;
 }
 
-.exibitions_container {
+.explore_container {
   display: grid;
   grid-template-columns: 90%;
   margin: 40px 10px;
   gap: 35px;
   justify-content: space-around;
 }
-.exibitions_container figure {
+.explore_container figure {
   margin: 0;
   padding: 0;
 }
-.exibitions_container img {
+.explore_container img {
   width: 100%;
   height: 400px;
   object-fit: cover;
 }
-.exibitions_container > div {
+.explore_container > div {
   border: 1px solid var(--black);
   background-color: var(--card-background-color);
   text-align: center;
@@ -44,4 +44,16 @@
 }
 .card-div-link a {
   padding: 30px;
+}
+.explore_kids_image1-fix {
+  object-position: 50% 17%;
+}
+.explore_kids_image2-fix {
+  object-position: 50% 9%;
+}
+.explore_kids_image3-fix {
+  object-position: 50% 62%;
+}
+.explore_kids_image4-fix {
+  object-position: 99% 50%;
 }
