@@ -5,6 +5,9 @@
   .card-div-link a {
     padding: 30px;
   }
+  .font-fix {
+    font-size: 1.5rem;
+  }
 }
 
 @media (min-width: 600px) {
@@ -17,15 +20,15 @@
   .home_visit_container {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .location figure,
   .admission figure {
     display: inline-block;
   }
 }
 @media (min-width: 700px) {
-  .exibitions_container {
-    grid-template-columns: 40% 40%;
-  }
+  .exibitions_container,
+  .involved_container,
   .explore_container {
     grid-template-columns: 40% 40%;
   }
