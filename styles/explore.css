@@ -24,6 +24,7 @@
   margin: 40px 10px;
   gap: 35px;
   justify-content: space-around;
+  filter: drop-shadow(2px 4px 6px black);
 }
 .explore_container figure {
   margin: 0;

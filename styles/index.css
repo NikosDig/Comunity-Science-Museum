@@ -83,8 +83,12 @@
   top: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.2;
+  opacity: 0.4;
   z-index: 10;
+}
+
+.home_exibitions_specific:hover::after {
+  opacity: 0;
 }
 
 .home_evolution_bg {
@@ -148,6 +152,9 @@
   opacity: 0.5;
   z-index: 10;
 }
+.image_opacity:hover::after {
+  opacity: 0;
+}
 
 /*      visit home section      */
 .home_visit_container {
@@ -162,6 +169,7 @@
   justify-items: center;
   align-items: end;
   min-height: 250px;
+  position: relative;
 }
 
 .home_visit_item1 {
