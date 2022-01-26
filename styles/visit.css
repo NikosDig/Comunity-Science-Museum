@@ -65,8 +65,9 @@
 .admission figure {
   width: 30%;
   height: 350px;
-  margin: 0;
+  margin: 10px;
   display: none;
+  filter: drop-shadow(2px 4px 6px black);
 }
 .visit_locationgrid_item1,
 .visit_locationgrid_item2,
@@ -99,6 +100,7 @@
 }
 .food figure {
   width: 80%;
+  filter: drop-shadow(2px 4px 6px black);
 }
 .food img {
   width: 100%;
