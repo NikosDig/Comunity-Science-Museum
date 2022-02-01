@@ -8,6 +8,7 @@
   width: 100%;
   height: 400px;
   margin: 20px auto;
+  filter: drop-shadow(2px 4px 6px #000);
 }
 .exibitions-heading_banner {
   font-size: 40px;
